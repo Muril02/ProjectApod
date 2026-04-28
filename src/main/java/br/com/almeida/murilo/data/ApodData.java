@@ -2,15 +2,20 @@ package br.com.almeida.murilo.data;
 
 
 public class ApodData {
-        public String
+        private String
                 copyright,
                 date,
                 explanation,
                 hdurl,
-                media_type,
-                service_version,
                 title,
                 url;
+
+        private String @JsonProperty("service_version")
+            serviceVersion;
+
+        private String @JsonProperty("media_type")
+                mediaType;
+
 
     public String getCopyright() {
         return copyright;
@@ -44,20 +49,20 @@ public class ApodData {
         this.hdurl = hdurl;
     }
 
-    public String getMedia_type() {
-        return media_type;
+    public String getMediaTyype() {
+        return mediaType;
     }
 
-    public void setMedia_type(String media_type) {
-        this.media_type = media_type;
+    public void setMediaType(String media_type) {
+        this.mediaType = mediaType;
     }
 
-    public String getService_version() {
-        return service_version;
+    public String getServiceVersion() {
+        return serviceVersion;
     }
 
-    public void setService_version(String service_version) {
-        this.service_version = service_version;
+    public void setServiceVersion(String service_version) {
+        this.serviceVersion = serviceVersion;
     }
 
     public String getTitle() {
