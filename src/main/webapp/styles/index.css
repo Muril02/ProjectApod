@@ -1,11 +1,9 @@
-/* Base Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Animated Nebula Background */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #02040a;
@@ -27,12 +25,11 @@ body {
     100% { background-position: 100% 50%; }
 }
 
-/* Sci-Fi HUD Terminal Card */
 .container {
-    background: rgba(5, 9, 20, 0.85); /* Deep dark void */
+    background: rgba(5, 9, 20, 0.85);
     border: 1px solid rgba(0, 242, 254, 0.3);
     border-radius: 16px;
-    /* Outer glow and Inner neon rim */
+
     box-shadow:
         0 20px 50px rgba(0, 0, 0, 0.9),
         inset 0 0 20px rgba(0, 242, 254, 0.1);
@@ -45,7 +42,6 @@ body {
     overflow: hidden;
 }
 
-/* Terminal Scanline Effect (Subtle overlay on the card) */
 .container::before {
     content: "";
     position: absolute;
@@ -56,7 +52,7 @@ body {
     z-index: 10;
 }
 
-/* Typography */
+
 h1 {
     color: #ffffff;
     font-size: 2.5rem;
@@ -76,7 +72,7 @@ p {
 
 small {
     display: block;
-    color: #ff007f; /* Hyper-pink accent for the date */
+    color: #ff007f;
     font-size: 1rem;
     margin-bottom: 30px;
     font-weight: 700;
@@ -84,7 +80,7 @@ small {
     text-shadow: 0 0 10px rgba(255, 0, 127, 0.6);
 }
 
-/* Zero-Gravity Floating Image */
+
 .apod-image {
     max-width: 100%;
     max-height: 500px;
@@ -104,7 +100,7 @@ small {
     100% { transform: translateY(0px); }
 }
 
-/* Forms and Inputs */
+
 .search-form {
     margin-bottom: 25px;
     position: relative;
@@ -136,7 +132,7 @@ input[type="text"]:focus {
     color: #ff007f;
 }
 
-/* Neon Control Panel Buttons */
+
 button {
     background: transparent;
     color: #00f2fe;
@@ -163,7 +159,7 @@ button:active {
     transform: translateY(1px);
 }
 
-/* Navigation Layout (+ / -) */
+
 .nav-buttons {
     display: flex;
     justify-content: center;

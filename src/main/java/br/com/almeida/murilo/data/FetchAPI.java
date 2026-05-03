@@ -68,7 +68,7 @@ public class FetchAPI extends HttpServlet{
     }
 
     private ApodData fetchApi(String dateUser) throws IOException, InterruptedException{
-        StringBuilder str = new StringBuilder(dateUser);
+       StringBuilder str = new StringBuilder(dateUser);
         str.insert(2, "/").insert(5, "/");
         String dateUserFormatted = str.toString();
 
