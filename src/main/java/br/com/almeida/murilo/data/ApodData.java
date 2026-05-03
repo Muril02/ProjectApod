@@ -1,5 +1,6 @@
 package br.com.almeida.murilo.data;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ApodData {
         private String
@@ -10,11 +11,12 @@ public class ApodData {
                 title,
                 url;
 
-        private String @JsonProperty("service_version")
-            serviceVersion;
+        @JsonProperty("service_version")
+        private String serviceVersion;
 
-        private String @JsonProperty("media_type")
-                mediaType;
+        @JsonProperty("media_type")
+        private String mediaType;
+
 
 
     public String getCopyright() {
